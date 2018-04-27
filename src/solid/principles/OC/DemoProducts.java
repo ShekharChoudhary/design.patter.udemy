@@ -35,8 +35,7 @@ public class DemoProducts {
 		
 		System.out.println("Filtering two items");
 		newFilter.filter(productList, new AndSpecification<>(new ColourSpecification(Colour.GREEN),new ShapeSpecification(Shape.LARGE)))
-		            .forEach(e -> System.out.println(" - "+e.name+" is Green and Large"));
-					
+		            .forEach(e -> System.out.println(" - "+e.name+" is Green and Large"));	
 		            
 	}
 }
